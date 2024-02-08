@@ -23,7 +23,7 @@ class UserInfo {
         sb.append(String.format("<%s>", phonenumber));
         sb.append(String.format("<%s>", gender));
         sb.append(String.format("\n"));
-        System.out.println(Arrays.toString(usrname));
+
         //Пишем в файл
         try (Writer writer = new BufferedWriter(new OutputStreamWriter(
                 new FileOutputStream(String.format("%s.txt", usrname[0]), true), "utf-8"))) {
@@ -31,6 +31,7 @@ class UserInfo {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+        System.out.println("Успешно");
     }
 
     //ПОЛ
@@ -46,7 +47,7 @@ class UserInfo {
         if(usrname.length() == 0){
             throw new RuntimeException("Вы не ввели, или ввели пол не соответствующий формату 'm' или  'f'");
         }
-        System.out.println(usrname);
+
         return usrname;
     }
 
@@ -63,7 +64,7 @@ class UserInfo {
         if (usrname.length() == 0) {
             throw new RuntimeException("Вы не ввели, или ввели ФИО не соответствуюее формату 'Яркин Алексей Александрович'");
         }
-        System.out.println(usrname);
+
         return usrname;
     }
 
@@ -80,7 +81,7 @@ class UserInfo {
         if(usrdate.length() == 0){
             throw new RuntimeException("Вы не ввели, или ввели дату не соответствующую формату '10.10.1989'");
         }
-        System.out.println(usrdate);
+
         return usrdate;
     }
 
@@ -94,7 +95,7 @@ class UserInfo {
         }
 
         String phonenumber = buildphone.toString();
-        System.out.println(phonenumber);
+
         if(phonenumber.length() == 0){
             throw new RuntimeException("Вы не ввели, или ввели номер телефона не соответствующий формату [+-]79213131841");
         }
