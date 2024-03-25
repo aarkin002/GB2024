@@ -11,7 +11,7 @@ for i in input_arr:
     if len(big_word) < len(i):
         big_word = i
 
-print("Одно из самых длинных слов (последнее в списке слово длиннее которого нет) = " + big_word)
+print("Одно из самых длинных слов (слово длиннее которого нет) = " + big_word)
 
 result = {}
 for word in input_arr:
