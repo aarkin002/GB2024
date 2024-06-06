@@ -83,8 +83,6 @@ CREATE TABLE Donhkeys
 
 #9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения
 
-# Добавляем столбцы рождения и команд
-
 #ALTER TABLE Dogs ADD CMD VARCHAR(50);
 #ALTER TABLE Dogs ADD BirthDay DATE;
 #ALTER TABLE Cats ADD CMD VARCHAR(50);
@@ -122,16 +120,17 @@ CREATE TABLE Donhkeys
 #до месяца подсчитать возраст животных в новой таблице
 
 #create table YoungAnimals as 
-#SELECT DogName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.dogs where DATE(BirthDay) BETWEEN '2019-01-01' AND '2023-01-01'
+#SELECT DogName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.dogs where DATE(BirthDay) BETWEEN '2019-01-01' AND '2022-01-01'
 #UNION
-#SELECT CatName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.cats where DATE(BirthDay) BETWEEN '2019-01-01' AND '2023-01-01'
+#SELECT CatName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.cats where DATE(BirthDay) BETWEEN '2019-01-01' AND '2022-01-01'
 #union
-#SELECT HamsterName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.hamsters where DATE(BirthDay) BETWEEN '2019-01-01' AND '2023-01-01'
+#SELECT HamsterName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.hamsters where DATE(BirthDay) BETWEEN '2019-01-01' AND '2022-01-01'
 #UNION
-#SELECT HorseName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.Horses where DATE(BirthDay) BETWEEN '2019-01-01' AND '2023-01-01'
+#SELECT HorseName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.Horses where DATE(BirthDay) BETWEEN '2019-01-01' AND '2022-01-01'
 #UNION
-#SELECT DonhkeyName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.donhkeys where DATE(BirthDay) BETWEEN '2019-01-01' AND '2023-01-01';
+#SELECT DonhkeyName as AnimalName, BirthDay, (SELECT TIMESTAMPDIFF( MONTH, BirthDay, CURDATE( ) )) AS ageMonth FROM gbkr.donhkeys where DATE(BirthDay) BETWEEN '2019-01-01' AND '2022-01-01';
 
+#ALTER TABLE younganimals add Id INT PRIMARY KEY AUTO_INCREMENT; - опционально
 
 
 
