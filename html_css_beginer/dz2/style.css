@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(255, 249, 241);
+}
+
+a {
+    text-decoration: none;
+}
+
+.main__href {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.imgord {
+    width: 213px;
+    border-radius: 30px;
+}
+
+.header_href {
+    color: cornflowerblue;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.h1_class {
+    color: #222222;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.h2_class {
+    color: coral;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 80px;
+}
+
+.p_class {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+    color: #7d7987;
+}
+
+.up_btn {
+    margin: 100px 0px;
+    text-align: left;
+}
