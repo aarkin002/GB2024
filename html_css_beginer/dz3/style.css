@@ -88,9 +88,12 @@ h2 {
 	margin-left: 20px;
 	margin-bottom: 38px;
 	margin-right: 195px;
+	font-family: ;
 }
 
 .Start_Now {
+	font-weight: bold;
+	border: none;
 	margin-left: 23px;
 	margin-right: 211px;
 	margin-top: 21px;
@@ -118,13 +121,15 @@ h2 {
 }
 
 .Watch_Video {
+	font-weight: bold;
+	background: none;
+	border: none;
 	margin-top: 15px;
 	margin-bottom: 16px;
 }
 
 .a_watch_video {
 	text-decoration: none;
-
 	text-align: left;
 	font-size: 15px;
 	line-height: 17.58px;
