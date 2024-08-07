@@ -25,6 +25,11 @@ body {
 	margin-left: 298px;
 }
 
+img {
+	display: block;
+	max-width: 100%;
+}
+
 nav {
 	display: flex;
 	gap: 337px;
