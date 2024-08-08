@@ -71,16 +71,13 @@ img {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
+	gap: 73px;
 }
 
 .SeoStartWatch {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
-}
-
-p {
-	margin: 0;
 }
 
 .h1_Seo {
@@ -111,30 +108,23 @@ p {
 .Start_Now {
 	font-weight: bold;
 	border-radius: 50px;
-	opacity: 0px;
-	background: #f25822;
-}
-
-.a_start_now {
-	font-family: "Gilroy-Bold";
-	display: flex;
 	padding-top: 15px;
 	padding-right: 36px;
 	padding-bottom: 16px;
 	padding-left: 35px;
+	background: #f25822;
+	color: #ffffff;
+	font-family: "Gilroy-Bold";
+	display: flex;
 	align-items: center;
 	font-size: 15px;
 	line-height: 17.58px;
 	text-align: left;
-	color: #ffffff;
 }
 
 .Watch_Video {
 	font-weight: bold;
 	background: none;
-}
-
-.a_watch_video {
 	font-family: "Gilroy-Bold";
 	text-decoration: none;
 	text-align: left;
