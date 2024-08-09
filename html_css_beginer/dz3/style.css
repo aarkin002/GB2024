@@ -79,6 +79,7 @@ img {
 	display: flex;
 	flex-wrap: nowrap;
 	flex-direction: column;
+	max-width: 556px;
 }
 
 .h1_Seo {
@@ -137,6 +138,10 @@ button {
 	font-size: 16px;
 	line-height: 19px;
 	color: #aaaaaa;
+}
+
+.img_mansandcoins1 {
+	max-width: 545px;
 }
 
 footer {
