@@ -96,6 +96,7 @@ img {
 	line-height: 140%;
 	text-align: left;
 	color: #888888;
+	max-width: 500px;
 }
 
 .StartAndWatch {
