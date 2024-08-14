@@ -166,6 +166,10 @@ button {
 	grid-template-columns: 1fr 1fr;
 }
 
+.div_disable_part_page_one-two_left {
+	padding-left: 34px;
+}
+
 .h2_div_disable_part_page_one-two_left {
 	margin-top: 100px;
 	margin-bottom: 20px;
@@ -270,7 +274,7 @@ button {
 	margin-left: 35px;
 }
 .boxShadow16 {
-	box-shadow: 33px 33px 70px -17px rgba(0, 0, 0, 0.1);
+	box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
 }
 
 .footer_page_two_up {
