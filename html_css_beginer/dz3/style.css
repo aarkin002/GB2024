@@ -216,6 +216,11 @@ button {
 	padding-top: 32px;
 }
 
+.img_macBook {
+	margin-top: 74px;
+	margin-left: 70px;
+}
+
 .header_page_two {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
