@@ -158,6 +158,7 @@ button {
 
 .disable_part_page_one-two {
 	background-image: url(./img/middleBackgroundPolosi.svg);
+	background-size: cover;
 }
 
 .div_disable_part_page_one-two {
