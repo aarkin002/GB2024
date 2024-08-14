@@ -186,6 +186,7 @@ button {
 	line-height: 140%;
 	color: #888888;
 	margin-bottom: 32px;
+	max-width: 511px;
 }
 
 .btn_div_disable_part_page_one-two_left {
@@ -205,6 +206,10 @@ button {
 	color: #ffffff;
 	padding: 16px 26px;
 	margin-bottom: 100px;
+}
+
+.div_disable_part_page_one-two_right {
+	padding-top: 32px;
 }
 
 .header_page_two {
