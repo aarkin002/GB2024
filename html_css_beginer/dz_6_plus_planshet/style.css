@@ -232,6 +232,7 @@ button {
 }
 
 .page_three_catalog_pos_one {
+	text-align: left;
 	background: #f8f8f8;
 }
 
@@ -311,9 +312,6 @@ button {
 		margin-left: 72px;
 	}
 	.h2_the_brand {
-		font-family: "Lato";
-		font-style: normal;
-		font-weight: 900;
 		font-size: 44px;
 		line-height: 53px;
 	}
