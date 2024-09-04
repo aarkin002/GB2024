@@ -1,6 +1,7 @@
 @font-face {
 	font-family: "Lato";
 	src: url(./fonts/Lato-Regular.woff2);
+	font-display: swap;
 }
 
 * {
@@ -414,7 +415,7 @@ button {
 			rgba(244, 244, 244, 0.7),
 			rgba(244, 244, 244, 0.7)
 		),
-		url(./img/pageFourMiddleBackground.png);
+		url(./img/pageFourMiddleBackground.webp);
 	background-size: 100% 100%;
 }
 
