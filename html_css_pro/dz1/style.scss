@@ -229,6 +229,7 @@ li {
         margin: auto;
         padding-top: 50px;
         padding-bottom: 90px;
+        min-width: 312px;
     }
 }
 
@@ -534,6 +535,8 @@ li {
 	flex-direction: row;
 	gap: 7px;
 }
+
+
 
 .footer__div__aside-social__button__img-facebook {
 	display: block;
