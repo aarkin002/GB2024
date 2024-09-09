@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 @font-face {
 	font-family: "Lato";
 	src: url(./fonts/Lato-Regular.woff2);
@@ -12,6 +14,7 @@
 
 body {
 	scroll-behavior: smooth;
+    background: white;
 }
 
 img {
@@ -90,13 +93,11 @@ button {
 
 .menu-active_all {
 	min-width: 232px;
-	background: #ffffff;
 	box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .menu-close {
 	max-width: 25px;
-	background: #ffffff;
 	float: right;
 	margin-right: 10px;
 	margin-top: 10px;
@@ -158,11 +159,7 @@ li {
 	list-style-type: none;
 }
 
-@mixin centerflex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 
 .page-one{
     &__header-background{
@@ -186,9 +183,7 @@ li {
     }
 
     &__header-nav__a, &__header-nav__a-cur-page{
-        font-family: 'Lato';
-        font-style: normal;
-        font-weight: 300;
+        @include fontMixin();
         font-size: 14px;
         line-height: 17px;
         color: #636363;
@@ -202,15 +197,19 @@ li {
         background: #F7F7F7;
         @include centerflex();
 
+        &__button-left, &__button-right {
+            background: none;
+        }
+
         &__button-left:hover .page-one__middle-background__left{
             fill: #F16D7F;
         }
-        
+
         &__button-right:hover .page-one__middle-background__right{
             fill: #F16D7F;
         }
 
-        &__left {
+        &__left, &__right {
             background: #E1E1E1;
             padding-top: 12px;
             padding-right: 15px;
@@ -220,12 +219,8 @@ li {
         }
 
         &__right{
-            background: #E1E1E1;
-            padding-top: 12px;
             padding-left: 15px;
-            padding-bottom: 12px;
             padding-right: 12px;
-            fill: #000;
         }
     }
 
@@ -255,9 +250,7 @@ li {
         &__h2-collection{
             padding-top: 65px;
             padding-bottom: 12px;
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
+            @include fontMixin();
             font-size: 14px;
             line-height: 17px;
             color: #F16D7F;
@@ -270,9 +263,7 @@ li {
         }
 
         &__h2-moschino{
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
+            @include fontMixin();
             font-size: 18px;
             line-height: 22px;
             color: #4D4D4D;
@@ -280,9 +271,7 @@ li {
         }
 
         &__h2-description{
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
+            @include fontMixin();
             font-size: 14px;
             line-height: 17px;
             text-align: center;
@@ -292,9 +281,7 @@ li {
         }
 
         &__h2-coast{
-            font-family: 'Lato';
-            font-style: normal;
-            font-weight: 300;
+            @include fontMixin();
             font-size: 24px;
             line-height: 29px;
             color: #EF5B70;
@@ -311,7 +298,6 @@ li {
             min-width: 375px;
             justify-content: space-between;
             margin-bottom: 48px;
-            
 
             &__btn{
                 @include centerflex();
@@ -409,9 +395,7 @@ li {
 }
 
 .h2_page_three_known {
-	font-family: "Lato";
-	font-style: normal;
-	font-weight: 300;
+	@include fontMixin();
 	font-size: 14px;
 	line-height: 17px;
 	color: #5d5d5d;

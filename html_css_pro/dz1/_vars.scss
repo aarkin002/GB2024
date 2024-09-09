@@ -1,0 +1,11 @@
+@mixin centerflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin fontMixin{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 300;
+}

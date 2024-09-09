@@ -11,6 +11,7 @@
 
 body {
   scroll-behavior: smooth;
+  background: white;
 }
 
 img {
@@ -89,13 +90,11 @@ button {
 
 .menu-active_all {
   min-width: 232px;
-  background: #ffffff;
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
 }
 
 .menu-close {
   max-width: 25px;
-  background: #ffffff;
   float: right;
   margin-right: 10px;
   margin-top: 10px;
@@ -196,13 +195,16 @@ li {
   align-items: center;
   justify-content: center;
 }
+.page-one__middle-background__button-left, .page-one__middle-background__button-right {
+  background: none;
+}
 .page-one__middle-background__button-left:hover .page-one__middle-background__left {
   fill: #F16D7F;
 }
 .page-one__middle-background__button-right:hover .page-one__middle-background__right {
   fill: #F16D7F;
 }
-.page-one__middle-background__left {
+.page-one__middle-background__left, .page-one__middle-background__right {
   background: #E1E1E1;
   padding-top: 12px;
   padding-right: 15px;
@@ -211,12 +213,8 @@ li {
   fill: #000;
 }
 .page-one__middle-background__right {
-  background: #E1E1E1;
-  padding-top: 12px;
   padding-left: 15px;
-  padding-bottom: 12px;
   padding-right: 12px;
-  fill: #000;
 }
 .page-one__middle-img {
   display: block;
