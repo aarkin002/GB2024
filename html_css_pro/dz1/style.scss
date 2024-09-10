@@ -1,4 +1,4 @@
-@import './vars.scss';
+@import './mixins.scss';
 
 @font-face {
 	font-family: "Lato";
@@ -351,8 +351,12 @@ li {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 30px;
+    margin-bottom: 128px;
 }
 
+.page_three_catalog_pos_one{
+    background: #F8F8F8;
+}
 
 .page_three__catalog__div-button-activate {
 	position: absolute;
