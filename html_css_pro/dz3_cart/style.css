@@ -406,6 +406,11 @@ button {
   margin-bottom: 42px;
 }
 .page-three__form-div__total-back__total__div-proceed__button {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
   background: #EF5B70;
   padding: 15px 42px;
   color: #fff;
