@@ -348,47 +348,55 @@ button {
             padding: 11px 14px;
             margin-bottom: 58px;
         }
-        &__total{
+        &__total-back{
+            @include centerflex();
+            background: #F5F3F3;
+            &__total{
+                max-width: 275px;
+                &__sub, &__grand {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                    gap: 30px;
+                    &__h2, &__money{
+                        @include fontMixin();
+                        font-weight: 400;
+                        font-size: 11px;
+                        line-height: 13px;
+                        color: #4A4A4A;
+                    }
+                }
+                &__sub{
+                    margin-top: 39px;
+                }
+                &__grand {
+                    margin-top: 12px;
+                    margin-bottom: 21px;
+                    gap: 27px;
+                    &__h2{
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #222222;
+                    }
 
-            &__sub, &__grand {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                gap: 30px;
-                &__h2, &__money{
-                    @include fontMixin();
-                    font-weight: 400;
-                    font-size: 11px;
-                    line-height: 13px;
-                    color: #4A4A4A;
+                    &__money{
+                        padding-right: 0px;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: $baseColor;
+                    }
                 }
-            }
-            &__grand {
-                margin-top: 12px;
-                margin-bottom: 21px;
-                gap: 27px;
-                &__h2{
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: #222222;
-                }
-
-                &__money{
-                    padding-right: 0px;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $baseColor;
-                }
-            }
-            &__div-proceed{
-                @include centerflex();
-                border-top: 1px solid #E2E2E2;
-                &__button{
-                    background: $baseColor;
-                    padding: 15px 42px;
-                    color: #fff;
-                    margin-top: 17px;
+                &__div-proceed{
+                    @include centerflex();
+                    border-top: 1px solid #E2E2E2;
+                    margin-bottom: 42px;
+                    &__button{
+                        background: $baseColor;
+                        padding: 15px 42px;
+                        color: #fff;
+                        margin-top: 17px;
+                    }
                 }
             }
         }

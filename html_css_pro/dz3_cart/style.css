@@ -354,13 +354,22 @@ button {
   padding: 11px 14px;
   margin-bottom: 58px;
 }
-.page-three__form-div__total__sub, .page-three__form-div__total__grand {
+.page-three__form-div__total-back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F5F3F3;
+}
+.page-three__form-div__total-back__total {
+  max-width: 275px;
+}
+.page-three__form-div__total-back__total__sub, .page-three__form-div__total-back__total__grand {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   gap: 30px;
 }
-.page-three__form-div__total__sub__h2, .page-three__form-div__total__sub__money, .page-three__form-div__total__grand__h2, .page-three__form-div__total__grand__money {
+.page-three__form-div__total-back__total__sub__h2, .page-three__form-div__total-back__total__sub__money, .page-three__form-div__total-back__total__grand__h2, .page-three__form-div__total-back__total__grand__money {
   font-family: "Lato";
   font-style: normal;
   font-weight: 300;
@@ -369,30 +378,34 @@ button {
   line-height: 13px;
   color: #4A4A4A;
 }
-.page-three__form-div__total__grand {
+.page-three__form-div__total-back__total__sub {
+  margin-top: 39px;
+}
+.page-three__form-div__total-back__total__grand {
   margin-top: 12px;
   margin-bottom: 21px;
   gap: 27px;
 }
-.page-three__form-div__total__grand__h2 {
+.page-three__form-div__total-back__total__grand__h2 {
   font-size: 16px;
   line-height: 19px;
   color: #222222;
 }
-.page-three__form-div__total__grand__money {
+.page-three__form-div__total-back__total__grand__money {
   padding-right: 0px;
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   color: #EF5B70;
 }
-.page-three__form-div__total__div-proceed {
+.page-three__form-div__total-back__total__div-proceed {
   display: flex;
   align-items: center;
   justify-content: center;
   border-top: 1px solid #E2E2E2;
+  margin-bottom: 42px;
 }
-.page-three__form-div__total__div-proceed__button {
+.page-three__form-div__total-back__total__div-proceed__button {
   background: #EF5B70;
   padding: 15px 42px;
   color: #fff;
