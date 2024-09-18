@@ -316,8 +316,8 @@ button {
 }
 .page-three__aside__ul {
   list-style: url(./img/listStyleCheck.svg);
-  padding-left: 27px;
-  padding-right: 22px;
+  padding-left: 30px;
+  overflow: auto;
 }
 .page-three__aside__ul__li {
   font-family: "Lato";
@@ -326,6 +326,8 @@ button {
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+  padding-left: 12px;
+  padding-bottom: 16px;
 }
 
 .page-four__header-background {
