@@ -545,4 +545,85 @@ button {
 .footer__div__aside-social__button__img-twitter:hover {
   background: #f16d7f;
   fill: white;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 736px;
+    margin: 0 auto;
+  }
+  .page-three {
+    gap: 22px;
+    margin-top: 40px;
+    margin-bottom: 96px;
+  }
+  .page-three__aside__h2-loyalty {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .page-three__aside__h2-get-in {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .page-three__aside__ul__li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .page-four__middle__div-women__h2 {
+    margin-bottom: 48px;
+  }
+  .page-four__middle__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 140px;
+  }
+  .page-four__middle__div-form {
+    padding-top: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .container {
+    max-width: 359px;
+    margin: 0 auto;
+  }
+  .hidden_mobile {
+    display: none;
+  }
+  .page-one__header-div {
+    display: flex;
+    justify-content: center;
+  }
+  .page-three {
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+  .page-three__form {
+    margin-top: 40px;
+    max-width: 359px;
+  }
+  .page-three__form__input-name {
+    min-width: 340px;
+  }
+  .page-three__form__input-em-pass {
+    min-width: 340px;
+  }
+  .page-three__aside__h2-loyalty {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .page-three__aside__h2-get-in {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .page-three__aside__ul__li {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .footer__div {
+    padding-top: 43px;
+    flex-direction: column-reverse;
+  }
 }/*# sourceMappingURL=style.css.map */

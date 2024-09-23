@@ -539,3 +539,110 @@ button {
     }
 
 }
+
+
+@media (max-width: 768px) {
+    .container{
+        max-width: 736px;
+        margin: 0 auto;
+    }
+    .page-three {
+        gap: 22px;
+        margin-top: 40px;
+        margin-bottom: 96px;
+        &__aside{
+            &__h2-loyalty{
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__h2-get-in{
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__ul{
+                &__li{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+    .page-four{
+        &__middle{
+            &__div-women{
+                &__h2{
+                    margin-bottom: 48px;
+                }
+            }
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 64px;
+                padding-bottom: 140px;
+            }
+            &__div-form{
+                padding-top: 48px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .container{
+        max-width: 359px;
+        margin: 0 auto;
+    }
+
+    .hidden_mobile{
+        display: none;
+    }
+
+    .page-one{
+        &__header-div{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .page-three{
+        flex-direction: column;
+        margin-bottom: 100px;
+        &__form{
+            margin-top: 40px;
+            max-width: 359px;
+            &__input-name{
+                min-width: 340px;
+            }
+            &__input-em-pass{
+                min-width: 340px;
+            }
+        }
+        &__aside{
+            &__h2-loyalty{
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__h2-get-in{
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &__ul{
+                &__li{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        &__div{
+            padding-top: 43px;
+            flex-direction: column-reverse;
+        }
+    }
+
+}

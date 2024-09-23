@@ -628,3 +628,141 @@ button {
     }
 
 }
+
+@media (max-width: 768px){
+    .container{
+        max-width: 735px;
+        margin: 0 auto;
+    }
+    .page-three{
+        position: relative;
+        flex-direction: column;
+        margin-top: 59px;
+        gap: 40px;
+        &__catalog{
+            margin-bottom: 64px;
+            &__pos-one{
+                min-width: 734px;
+                &__descript{
+                    &__div-close{
+                        gap: 210px;
+                    }
+                }
+            }
+        }
+        &__form-div{
+            &__total-back{
+                position: absolute;
+                right: 0;
+                margin-top: 39px;
+                padding-right: 30px;
+                padding-left: 30px;
+                &__total{
+                    max-width: 360px;
+                }
+            }
+        }
+    }
+    .page-four{
+        &__middle{
+            &__container{
+                flex-direction: column;
+                align-items: center;
+            }
+            &__div-women{
+                &__h2{
+                    margin-bottom: 0;
+                }
+            }
+            &__div-form{
+                padding-top: 48px;
+                padding-bottom: 140px;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px){
+    .container{
+        max-width: 358px;
+        min-width: none;
+        margin: 0 auto;
+    }
+    .hidden_mobile{
+        display: none;
+    }
+    .page-one{
+        &__header-div{
+            justify-content: center;
+        }
+    }
+    .page-three{
+        position: unset;
+        padding-top: 32px;
+        margin-bottom: 96px;
+        &__catalog{
+            margin-bottom: 0;
+            &__pos-one{
+                min-width: 358px;
+                &__img{
+                    max-width: 144px;
+                    background-size: cover;
+                }
+                &__descript{
+                    gap: 25px;
+                    &__div-close{
+                        gap: 10px;
+                        &__h2-ellety-caps{
+                            max-width: 140px;
+                            margin-top: 13px;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        &__svg{
+                            transform: scale(0.50);
+                        }
+                    }
+                    &__div{
+                        &__pos-one, &__pos-two{
+                            &__h2-first, &__h2-second{
+                                font-size: 14px;
+                                line-height: 17px;
+                            }
+                            &__h2-third{
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__buttons{
+                margin-top: 30px;
+                &__clear, &__continue{
+                    font-size: 12px;
+                    line-height: 14px;
+                    padding: 9px 18px;
+                }
+            }
+        }
+        &__form-div{
+            &__form{
+                &__input-one{
+                    min-width: 340px;
+                }
+            }
+            &__total-back{
+                margin-top: 0;
+                position: unset;
+                padding: 0;
+                max-width: 370px;
+            }
+        }
+    }
+    .footer{
+        &__div{
+            flex-direction: column-reverse;
+            padding-top: 43px;
+        }
+    }
+}
